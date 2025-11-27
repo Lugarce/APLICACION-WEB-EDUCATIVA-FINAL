@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Matienzo - Temas por año</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <div class="layout">
+
+    <!-- SIDEBAR UNIFICADO -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <img src="logo.png" alt="Logo Matienzo" class="sidebar-logo">
+        <div class="sidebar-title">Matienzo</div>
+      </div>
+
+      <nav class="nav-menu">
+
+        <a href="index.html" class="nav-item">
+          <svg viewBox="0 0 24 24" stroke="currentColor" fill="none">
+            <path d="M3 12l9-9 9 9"/>
+            <path d="M9 21V9h6v12"/>
+          </svg>
+          <span>Inicio</span>
+        </a>
+
+        <a href="buscar.html" class="nav-item">
+          <svg viewBox="0 0 24 24" stroke="currentColor" fill="none">
+            <circle cx="11" cy="11" r="7"/>
+            <line x1="16.65" y1="16.65" x2="21" y2="21"/>
+          </svg>
+          <span>Buscar</span>
+        </a>
+
+        <a href="temas.html" class="nav-item active">
+          <svg viewBox="0 0 24 24" stroke="currentColor" fill="none">
+            <rect x="3" y="4" width="18" height="6" rx="2"/>
+            <rect x="3" y="14" width="18" height="6" rx="2"/>
+          </svg>
+          <span>Temas</span>
+        </a>
+
+        <a href="recursos.html" class="nav-item">
+          <svg viewBox="0 0 24 24" stroke="currentColor" fill="none">
+            <path d="M4 4h16v16H4z"/>
+            <path d="M4 15l5-5 4 4 3-3 4 4"/>
+          </svg>
+          <span>Recursos</span>
+        </a>
+
+        <a href="autor.html" class="nav-item">
+          <svg viewBox="0 0 24 24" stroke="currentColor" fill="none">
+            <circle cx="12" cy="7" r="4"/>
+            <path d="M4 21c2-4 6-6 8-6s6 2 8 6"/>
+          </svg>
+          <span>Autor</span>
+        </a>
+
+      </nav>
+
+      <!-- CONFIGURACIÓN UNIFICADA AL FINAL -->
+      <div class="configuracion">
+        <div class="configuracion-box" id="modo-oscuro-box">
+          <span>Modo Oscuro</span>
+          <div class="toggle-btn" id="toggle-theme"></div>
+        </div>
+        <div class="configuracion-box" id="reset-datos">
+          <span>Reset Datos</span>
+        </div>
+      </div>
+
+    </aside>
+
+    <!-- CONTENIDO -->
+    <main class="main">
+
+      <h1>Temas por año</h1>
+      <p style="color:var(--clr-text-muted); margin-bottom:20px;">
+        Guía completa de temas organizados por año y curso.
+      </p>
+
+      <!-- =======================
+           LISTA POR AÑOS
+      ========================== -->
+
+      <div class="dashboard-grid">
+
+        <!-- 1° AÑO -->
+        <div class="card">
+          <h2>1° de Secundaria</h2>
+          <a class="topic-card" href="ver-tema.html?id=fracciones" style="margin-top:10px; display:block;">Aritmética — Fracciones</a>
+          <a class="topic-card" href="ver-tema.html?id=numeros-decimales" style="margin-top:10px; display:block;">Aritmética — Números Decimales</a>
+        </div>
+
+        <!-- 2° AÑO -->
+        <div class="card">
+          <h2>2° de Secundaria</h2>
+          <a class="topic-card" href="ver-tema.html?id=ecuaciones-lineales" style="margin-top:10px; display:block;">Álgebra — Ecuaciones lineales</a>
+          <a class="topic-card" href="ver-tema.html?id=congruencia-triangulos" style="margin-top:10px; display:block;">Geometría — Congruencia de triángulos</a>
+          <a class="topic-card" href="ver-tema.html?id=triangulos" style="margin-top:10px; display:block;">Geometría — Triángulos</a>
+        </div>
+
+        <!-- 3° AÑO -->
+        <div class="card">
+          <h2>3° de Secundaria</h2>
+          <a class="topic-card" href="ver-tema.html?id=divisibilidad" style="margin-top:10px; display:block;">Aritmética — Divisibilidad</a>
+          <a class="topic-card" href="ver-tema.html?id=expresiones-algebraicas" style="margin-top:10px; display:block;">Álgebra — Expresiones algebraicas</a>
+        </div>
+
+        <!-- 4° AÑO -->
+        <div class="card">
+          <h2>4° de Secundaria</h2>
+          <a class="topic-card" href="ver-tema.html?id=factorizacion" style="margin-top:10px; display:block;">Álgebra — Factorización</a>
+          <a class="topic-card" href="ver-tema.html?id=cuadrilateros" style="margin-top:10px; display:block;">Geometría — Cuadriláteros</a>
+        </div>
+
+        <!-- 5° AÑO -->
+        <div class="card">
+          <h2>5° de Secundaria</h2>
+          <a class="topic-card" href="ver-tema.html?id=razones-trigonometricas" style="margin-top:10px; display:block;">Trigonometría — Razones trigonométricas</a>
+          <a class="topic-card" href="ver-tema.html?id=identidades-basicas" style="margin-top:10px; display:block;">Trigonometría — Identidades básicas</a>
+        </div>
+
+      </div>
+
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

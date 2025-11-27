@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Matienzo - Perfil</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <div class="layout">
+
+    <!-- SIDEBAR UNIFICADO -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <div class="sidebar-logo"></div>
+        <div class="sidebar-title">Matienzo</div>
+      </div>
+
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-item">
+          <svg viewBox="0 0 24 24" stroke="currentColor" fill="none">
+            <path d="M3 12l9-9 9 9"/>
+            <path d="M9 21V9h6v12"/>
+          </svg>
+          <span>Inicio</span>
+        </a>
+
+        <a href="buscar.html" class="nav-item">
+          <svg viewBox="0 0 24 24" stroke="currentColor" fill="none">
+            <circle cx="11" cy="11" r="7"/>
+            <line x1="16.65" y1="16.65" x2="21" y2="21"/>
+          </svg>
+          <span>Buscar</span>
+        </a>
+
+        <a href="temas.html" class="nav-item">
+          <svg viewBox="0 0 24 24" stroke="currentColor" fill="none">
+            <rect x="3" y="4" width="18" height="6" rx="2"/>
+            <rect x="3" y="14" width="18" height="6" rx="2"/>
+          </svg>
+          <span>Temas</span>
+        </a>
+
+        <a href="recursos.html" class="nav-item">
+          <svg viewBox="0 0 24 24" stroke="currentColor" fill="none">
+            <path d="M4 4h16v16H4z"/>
+            <path d="M4 15l5-5 4 4 3-3 4 4"/>
+          </svg>
+          <span>Recursos</span>
+        </a>
+
+        <a href="autor.html" class="nav-item active">
+          <svg viewBox="0 0 24 24" stroke="currentColor" fill="none">
+            <circle cx="12" cy="7" r="4"/>
+            <path d="M4 21c2-4 6-6 8-6s6 2 8 6"/>
+          </svg>
+          <span>Autor</span>
+        </a>
+      </nav>
+
+      <!-- CONFIGURACIÓN UNIFICADA -->
+      <div class="configuracion">
+        <div class="configuracion-box" id="modo-oscuro-box">
+          <span>Modo Oscuro</span>
+          <div class="toggle-btn" id="toggle-theme"></div>
+        </div>
+        <div class="configuracion-box" id="reset-datos">
+          <span>Reset Datos</span>
+        </div>
+      </div>
+    </aside>
+
+    <!-- CONTENIDO -->
+    <main class="main">
+
+      <h1>Conoce al Creador</h1>
+      <p style="color:var(--clr-text-muted); margin-bottom:20px;">
+        Descubre la historia detrás de Matienzo y su mensaje especial para ti.
+      </p>
+
+      <div class="card" style="text-align:center;">
+
+        <!-- FOTO -->
+        <div style="
+          width:160px;
+          height:160px;
+          border-radius:50%;
+          overflow:hidden;
+          margin:0 auto 18px;
+          background:var(--clr-bg-soft-2);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 60px;
+          color: var(--clr-accent);
+        ">
+          <img src="luciano.jpg" alt="Kiara Turpo" style="width:100%; height:100%; object-fit:cover;" onerror="this.style.display='none'">
+        </div>
+
+        <!-- TEXTO -->
+        <h2 style="margin-bottom:10px;">Luciano Garcia</h2>
+        <p style="color:var(--clr-text-muted); margin-bottom:20px;">
+          Estudiante de secundaria · Apasionado por las matemáticas · Creador de Matienzo
+        </p>
+
+        <p style="color:var(--clr-text-muted); max-width:500px; margin:0 auto 30px;">
+          "Desde que descubrí la belleza oculta en los números y las fórmulas, supe que quería compartir 
+          esta pasión con otros. Matienzo nace de esa chispa, del deseo de crear un espacio donde las 
+          matemáticas dejen de ser un obstáculo y se conviertan en un puente hacia el entendimiento. 
+          Mi sueño es dejar un legado que inspire a más estudiantes a ver dentro   de los ejercicios y 
+          descubrir la magia que habita en cada ecuación resuelta, en cada problema comprendido."
+        </p>
+
+        <!-- MENSAJE MOTIVACIONAL -->
+        <div class="card" style="background:var(--clr-accent-pink); color:white; text-align:left; max-width:600px; margin:0 auto;">
+          <h3 style="color:white; margin-bottom:15px;">Un Mensaje Para Ti</h3>
+          <p style="margin-bottom:15px; font-size:1.1rem;">
+            Estudiar matemáticas no se trata de ser perfecto, sino de avanzar un poco cada día. 
+            Si estás usando esta página, ya diste un paso importante: <strong>decidiste aprender</strong>.
+          </p>
+          <div style="background:rgba(255,255,255,0.1); padding:15px; border-radius:var(--radius); margin-bottom:15px;">
+            <ul style="margin-left:20px; margin-bottom:0;">
+              <li><strong>Equivocarse es parte del proceso</strong> - Cada error te acerca más a la comprensión</li>
+              <li><strong>Preguntar demuestra interés, no debilidad</strong> - La curiosidad es tu mejor aliada</li>
+              <li><strong>Cada ejercicio resuelto es una victoria pequeña</strong> - Celebra tus logros por pequeños que sean</li>
+            </ul>
+          </div>
+          <p style="font-style:italic; margin-bottom:0; text-align:center; font-size:1.1rem;">
+            "La matemática no es para genios, es para personas constantes."
+          </p>
+        </div>
+
+        <!-- INSPIRACIÓN ADICIONAL -->
+        <div style="margin-top:25px; padding:20px; background:var(--clr-bg-soft-2); border-radius:var(--radius);">
+          <h3 style="margin-bottom:15px;">Mi Inspiración</h3>
+          <p style="color:var(--clr-text-muted); margin-bottom:0;">
+            "Creo firmemente que cuando compartimos conocimiento, no lo perdemos, lo multiplicamos. 
+            Matienzo es mi forma de multiplicar el amor por las matemáticas y demostrar que con 
+            dedicación y los recursos adecuados, cualquier estudiante puede brillar en esta hermosa disciplina."
+          </p>
+        </div>
+
+      </div>
+
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

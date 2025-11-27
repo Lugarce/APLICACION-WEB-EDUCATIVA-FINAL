@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Matienzo - Recursos</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <div class="layout">
+
+    <!-- SIDEBAR UNIFICADO -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <div class="sidebar-logo"></div>
+        <div class="sidebar-title">Matienzo</div>
+      </div>
+
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-item">
+          <svg viewBox="0 0 24 24" stroke="currentColor" fill="none">
+            <path d="M3 12l9-9 9 9"/>
+            <path d="M9 21V9h6v12"/>
+          </svg>
+          <span>Inicio</span>
+        </a>
+
+        <a href="buscar.html" class="nav-item">
+          <svg viewBox="0 0 24 24" stroke="currentColor" fill="none">
+            <circle cx="11" cy="11" r="7"/>
+            <line x1="16.65" y1="16.65" x2="21" y2="21"/>
+          </svg>
+          <span>Buscar</span>
+        </a>
+
+        <a href="temas.html" class="nav-item">
+          <svg viewBox="0 0 24 24" stroke="currentColor" fill="none">
+            <rect x="3" y="4" width="18" height="6" rx="2"/>
+            <rect x="3" y="14" width="18" height="6" rx="2"/>
+          </svg>
+          <span>Temas</span>
+        </a>
+
+        <a href="recursos.html" class="nav-item active">
+          <svg viewBox="0 0 24 24" stroke="currentColor" fill="none">
+            <path d="M4 4h16v16H4z"/>
+            <path d="M4 15l5-5 4 4 3-3 4 4"/>
+          </svg>
+          <span>Recursos</span>
+        </a>
+
+        <a href="autor.html" class="nav-item">
+          <svg viewBox="0 0 24 24" stroke="currentColor" fill="none">
+            <circle cx="12" cy="7" r="4"/>
+            <path d="M4 21c2-4 6-6 8-6s6 2 8 6"/>
+          </svg>
+          <span>Autor</span>
+        </a>
+      </nav>
+
+      <!-- CONFIGURACIÓN UNIFICADA -->
+      <div class="configuracion">
+        <div class="configuracion-box" id="modo-oscuro-box">
+          <span>Modo Oscuro</span>
+          <div class="toggle-btn" id="toggle-theme"></div>
+        </div>
+        <div class="configuracion-box" id="reset-datos">
+          <span>Reset Datos</span>
+        </div>
+      </div>
+    </aside>
+
+    <!-- CONTENIDO -->
+    <main class="main">
+
+      <h1>Recursos de Estudio</h1>
+      <p style="color:var(--clr-text-muted); margin-bottom:20px;">
+        Libros recomendados, fórmulas esenciales y materiales visuales para potenciar tu aprendizaje.
+      </p>
+
+      <!-- LIBROS RECOMENDADOS -->
+      <div class="card" style="margin-bottom:20px;">
+        <h2>Libros Recomendados</h2>
+
+        <div style="margin-top:12px;">
+          <!-- Libro 1 -->
+          <div class="libro-item">
+            <img src="libro-algebra-baldor.jpg" alt="Álgebra Baldor" class="libro-img" onerror="this.style.display='none'">
+            <div class="libro-content">
+              <h3>Álgebra - Aurelio Baldor</h3>
+              <p style="color:var(--clr-text-muted); margin-bottom:8px;">El clásico por excelencia. Contiene teoría clara y miles de ejercicios progresivos desde básico hasta avanzado.</p>
+              <p style="color:var(--clr-accent); font-weight:600;">Ideal para: Estudiantes de 1° a 5° de secundaria</p>
+              <p style="margin-top:8px; font-size:0.95rem;">
+                <span style="font-weight:600; color:var(--clr-text);">Descarga/Ver PDF:</span>
+                <a href="https://resources.inei.edu.mx/pdfRecursos/1628792471_MATEM%C3%81TICAS_algebrabaldor.pdf" target="_blank" style="color:var(--clr-accent); text-decoration:underline;">Ver PDF en línea</a>
+              </p>
+            </div>
+          </div>
+
+          <!-- Libro 2 -->
+          <div class="libro-item">
+            <img src="libro-geometria-godofredo.jpg" alt="Geometría Godofredo Vega" class="libro-img" onerror="this.style.display='none'">
+            <div class="libro-content">
+              <h3>Geometría - Dolores Alía</h3>
+              <p style="color:var(--clr-text-muted); margin-bottom:8px;">Completo compendio de geometría plana y del espacio con demostraciones claras y problemas resueltos.</p>
+              <p style="color:var(--clr-accent); font-weight:600;">Ideal para: Estudiantes de 2° a 4° de secundaria</p>
+              <span style="font-weight:600; color:var(--clr-text);">Descarga/Ver PDF:</span>
+                <a href="https://www.ututo.org/downloads/aliageom.pdf" target="_blank" style="color:var(--clr-accent); text-decoration:underline;">Ver PDF en línea</a>
+            </div>
+          </div>
+
+          <!-- Libro 3 -->
+          <div class="libro-item">
+            <img src="libro-trigonometria-reinaldo.jpg" alt="Trigonometría Reinaldo Zubaran" class="libro-img" onerror="this.style.display='none'">
+            <div class="libro-content">
+              <h3>Trigonometría - Reinaldo Zubaran</h3>
+              <p style="color:var(--clr-text-muted); margin-bottom:8px;">Esencial para 5° de secundaria. Incluye todas las identidades, ecuaciones y aplicaciones prácticas.</p>
+              <p style="color:var(--clr-accent); font-weight:600;">Ideal para: Estudiantes de 5° de secundaria</p>
+              <span style="font-weight:600; color:var(--clr-text);">Descarga/Ver PDF:</span>
+                <a href="https://www.unfv.edu.pe/ceprevi/images/servicios/ciclos/ciclo_c/2018/Libros/Trigonometria.pdf" target="_blank" style="color:var(--clr-accent); text-decoration:underline;">Ver PDF en línea</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- RECURSOS VISUALES DEL CUADERNO -->
+      <div class="dashboard-grid">
+
+        <!-- POLINOMIOS -->
+        <div class="card">
+          <h2>Polinomios</h2>
+          <p style="color:var(--clr-text-muted); margin-bottom:12px;">Operaciones algebraicas fundamentales - Fotos de mi cuaderno</p>
+          <div class="fotos-container">
+            <img src="polinomios-1.jpg" alt="Polinomios - Suma y Resta" class="foto-vertical" onerror="this.style.display='none'">
+            <img src="polinomios-2.jpg" alt="Polinomios - Multiplicación" class="foto-vertical" onerror="this.style.display='none'">
+            <img src="polinomios-3.jpg" alt="Polinomios - División" class="foto-vertical" onerror="this.style.display='none'">
+          </div>
+          <p style="color:var(--clr-text-muted); margin-top:12px; font-size:0.9rem;">
+            Apuntes personales sobre operaciones con polinomios: suma, resta, multiplicación y división
+          </p>
+        </div>
+
+        <!-- FÓRMULAS DE TRIGONOMETRÍA -->
+        <div class="card">
+          <h2>Fórmulas de Trigonometría</h2>
+          <p style="color:var(--clr-text-muted); margin-bottom:12px;">Identidades y relaciones trigonométricas - Fotos de mi cuaderno</p>
+          <div class="fotos-container">
+            <img src="trigonometria-1.jpg" alt="Trigonometría - Razones Básicas" class="foto-vertical" onerror="this.style.display='none'">
+            <img src="trigonometria-2.jpg" alt="Trigonometría - Identidades" class="foto-vertical" onerror="this.style.display='none'">
+            <img src="trigonometria-3.jpg" alt="Trigonometría - Fórmulas Avanzadas" class="foto-vertical" onerror="this.style.display='none'">
+          </div>
+          <p style="color:var(--clr-text-muted); margin-top:12px; font-size:0.9rem;">
+            Resumen visual de fórmulas trigonométricas esenciales para resolver problemas
+          </p>
+        </div>
+
+        <!-- PRÁCTICAS -->
+        <div class="card">
+          <h2>Prácticas</h2>
+          <p style="color:var(--clr-text-muted); margin-bottom:12px;">Ejercicios y problemas resueltos - Fotos de mi cuaderno</p>
+          <div class="fotos-container">
+            <img src="practicas-1.jpg" alt="Prácticas - Ejercicio 1" class="foto-vertical" onerror="this.style.display='none'">
+            <img src="practicas-2.jpg" alt="Prácticas - Ejercicio 2" class="foto-vertical" onerror="this.style.display='none'">
+            <img src="practicas-3.jpg" alt="Prácticas - Ejercicio 3" class="foto-vertical" onerror="this.style.display='none'">
+          </div>
+          <p style="color:var(--clr-text-muted); margin-top:12px; font-size:0.9rem;">
+            Selección de problemas prácticos con soluciones paso a paso de mi cuaderno
+          </p>
+        </div>
+
+      </div>
+
+      <!-- CONSEJOS DE ESTUDIO -->
+      <div class="card" style="margin-top:20px;">
+        <h2>Consejos para Usar Estos Recursos</h2>
+        <ul class="list">
+          <li><strong>Toma tus propias fotos:</strong> Fotografía tus apuntes más importantes y organízalos por temas</li>
+          <li><strong>Crea tu fórmulaario:</strong> Haz resúmenes visuales de las fórmulas que más uses</li>
+          <li><strong>Practica regularmente:</strong> Resuelve los ejercicios de los libros recomendados</li>
+          <li><strong>Personaliza tu aprendizaje:</strong> Adapta estos recursos a tu estilo de estudio</li>
+          <li><strong>Organiza tus fotos:</strong> Mantén un orden lógico en tus imágenes para fácil acceso</li>
+        </ul>
+      </div>
+
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
